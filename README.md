@@ -1,75 +1,30 @@
-# Nuxt Minimal Starter
+# 🍏 Nuxt 3 Fruit App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 📌 Project Description
+This project is a **Nuxt 3 + Vue 3 + Pinia** web application that allows users to browse fruits, apply dynamic nutritional filters, add fruits to favorites, and view fruit groups by family.
 
-## Setup
+## 📦 **Installation & Setup**
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/nuxt3-fruit-app.git
+   cd nuxt3-fruit-app
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Create and configure the .env file: If the .env file does not exist, create it in the root directory and add the following field:**
+   ```sh
+   VITE_API_BASE_URL="https://www.fruityvice.com/api/"
+   ```
+4. **Start the local development server:**
+   ```sh
+   npm run dev
+   ```
 
-Make sure to install dependencies:
+## 🎯 **Optimizations**
+- **Using `shallowRef()`** for caching data.
+- **`v-memo`** is used in lists to prevent redundant re-renders.
+- **Favorites are stored in `localStorage`**, ensuring persistence across reloads.
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+⚠️ Note: Some functionalities may not work correctly on GitHub Pages, such as adding fruits to favorites, due to the limitations of a purely static environment.
